@@ -662,7 +662,7 @@ declare namespace Bacon {
          *     x.zip(y, (x, y) => x + y);
          * }
          */
-        zip<B, C>(other:EventStream<E, B>, f:(a:A, b:B) => C):EventStream<E, C>;
+        zip<B, C>(other:EventStream<E, B>, f?:(a:A, b:B) => C):EventStream<E, C>;
 
         /**
          * @method
